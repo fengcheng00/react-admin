@@ -52,7 +52,19 @@ export const ComponentCard = ({
                                     {component.componentId}
                                 </Typography>
                                 <Typography variant="body2" gutterBottom>
+                                    {component.envId}
+                                </Typography>
+                                <Typography variant="body2" gutterBottom>
                                     {component.branchName}
+                                </Typography>
+                                <Typography variant="body2" gutterBottom>
+                                    {component.buildTime}
+                                </Typography>
+                                <Typography variant="body2" gutterBottom>
+                                    {component.componentVersion}
+                                </Typography>
+                                <Typography variant="body2" gutterBottom>
+                                    {component.commitId}
                                 </Typography>
                                 {/*<Typography*/}
                                 {/*    variant="caption"*/}

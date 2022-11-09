@@ -38,15 +38,14 @@ const getComponentsByColumn = (data: Component[]): ComponentsByColumn => {
             stages.reduce((obj, stage) => ({ ...obj, [stage]: [] }), {} as any)
         );
     // order each column by index
-    // stages.forEach(stage => {
-    //     // @ts-ignore
-    //     columns[stage] = columns[stage]
-    //         // .sort(
-    //         //     (recordA: Component, recordB: Component) =>
-    //         //         recordA.id - recordB.id
-    //         // )
-    //         .map((deal: Component) => deal.id);
-    // });
+    stages.forEach(stage => {
+        columns[stage] = columns[stage]
+            .sort(
+                (recordA: Component, recordB: Component) =>
+                    Number(recordA.id) - Number(recordB.id)
+            )
+            .map((deal: Component) => deal.id);
+    });
     return columns;
 };
 
