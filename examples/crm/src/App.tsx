@@ -6,6 +6,7 @@ import Layout from './Layout';
 import contacts from './contacts';
 import companies from './companies';
 import deals from './deals';
+import components from './components';
 import { Dashboard } from './dashboard/Dashboard';
 
 const App = () => (
@@ -26,6 +27,7 @@ const App = () => (
         <Resource name="deals" {...deals} />
         <Resource name="contacts" {...contacts} />
         <Resource name="companies" {...companies} />
+        <Resource name="components" {...components} />
         <Resource name="contactNotes" />
         <Resource name="dealNotes" />
         <Resource name="tasks" list={ListGuesser} />

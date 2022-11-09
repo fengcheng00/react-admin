@@ -17,8 +17,8 @@ const stages = [
     'proposal-sent',
     'in-negociation',
     'won',
-    'lost',
-    'delayed',
+    // 'lost',
+    // 'delayed',
 ];
 //const tags = ["new deal", "upsell", "SAV"];
 

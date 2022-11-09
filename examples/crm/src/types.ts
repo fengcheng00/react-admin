@@ -68,3 +68,13 @@ export interface Tag extends RaRecord {
     name: string;
     color: string;
 }
+
+export interface Component extends RaRecord {
+    envId: string;
+    componentId: string;
+    envURL: string;
+    branchName: string;
+    componentVersion: string;
+    buildTime: string;
+    commitId: string;
+}

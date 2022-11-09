@@ -13,6 +13,8 @@ const Header = () => {
         currentPath = '/companies';
     } else if (!!matchPath('/deals/*', location.pathname)) {
         currentPath = '/deals';
+    } else if (!!matchPath('/components/*', location.pathname)) {
+        currentPath = '/components';
     }
 
     return (
@@ -30,7 +32,7 @@ const Header = () => {
                                 alt="Bosch Logo"
                             />
                             <Typography component="span" variant="h5">
-                                Atomic CRM
+                                Cision One Release Helper
                             </Typography>
                         </Box>
                         <Box>
@@ -63,6 +65,12 @@ const Header = () => {
                                     component={Link}
                                     to="/deals"
                                     value="/deals"
+                                />
+                                <Tab
+                                    label={'Components'}
+                                    component={Link}
+                                    to="/components"
+                                    value="/components"
                                 />
                             </Tabs>
                         </Box>

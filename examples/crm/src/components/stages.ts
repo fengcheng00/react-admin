@@ -1,17 +1,17 @@
 export const stages = [
-    'opportunity',
-    'proposal-sent',
-    'in-negociation',
-    'won',
+    'dev',
+    'qa',
+    'stage',
+    'prod',
     // 'lost',
     // 'delayed',
 ];
 
 export const stageNames = {
-    opportunity: 'Dev',
-    'proposal-sent': 'Qa',
-    'in-negociation': 'Stage',
-    won: 'Prod',
+    dev: 'Dev',
+    qa: 'Qa',
+    stage: 'Stage',
+    prod: 'Prod',
     // lost: 'Lost',
     // delayed: 'Delayed',
 };
