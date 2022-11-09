@@ -14,13 +14,14 @@ import { matchPath, useLocation } from 'react-router';
 import { ComponentListContent } from './ComponentListContent';
 // import { DealCreate } from './DealCreate';
 import { ComponentShow } from './ComponentShow';
+import { CreateComponent } from './CreateComponent';
 import { OnlyMineInput } from './OnlyMineInput';
 import { typeChoices } from './types';
 
 export const ComponentList = () => {
     const { identity } = useGetIdentity();
     const location = useLocation();
-    // const matchCreate = matchPath('/deals/create', location.pathname);
+    const matchCreate = matchPath('/components/create', location.pathname);
     // const matchShow = matchPath('/components/:id/show', location.pathname);
     if (!identity) return null;
     return (
@@ -36,7 +37,7 @@ export const ComponentList = () => {
             >
                 <ComponentListContent />
             </List>
-            {/*<DealCreate open={!!matchCreate} />*/}
+            {<CreateComponent open={!!matchCreate} />}
             {/*<ComponentShow open={!!matchShow} id={matchShow?.params.id} />*/}
         </>
     );

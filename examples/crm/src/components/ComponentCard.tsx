@@ -66,6 +66,19 @@ export const ComponentCard = ({
                                 <Typography variant="body2" gutterBottom>
                                     {component.commitId}
                                 </Typography>
+                                <Typography
+                                    variant="body2"
+                                    gutterBottom
+                                    style={{
+                                        fontWeight: 'bold',
+                                        color:
+                                            component.status === 'UP'
+                                                ? 'green'
+                                                : 'red',
+                                    }}
+                                >
+                                    {component.status}
+                                </Typography>
                                 {/*<Typography*/}
                                 {/*    variant="caption"*/}
                                 {/*    color="textSecondary"*/}
