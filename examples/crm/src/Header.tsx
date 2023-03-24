@@ -42,30 +42,30 @@ const Header = () => {
                                 indicatorColor="secondary"
                                 textColor="inherit"
                             >
-                                <Tab
-                                    label={'Dashboard'}
-                                    component={Link}
-                                    to="/"
-                                    value="/"
-                                />
-                                <Tab
-                                    label={'Contacts'}
-                                    component={Link}
-                                    to="/contacts"
-                                    value="/contacts"
-                                />
-                                <Tab
-                                    label={'Companies'}
-                                    component={Link}
-                                    to="/companies"
-                                    value="/companies"
-                                />
-                                <Tab
-                                    label={'Deals'}
-                                    component={Link}
-                                    to="/deals"
-                                    value="/deals"
-                                />
+                                {/*<Tab*/}
+                                {/*    label={'Dashboard'}*/}
+                                {/*    component={Link}*/}
+                                {/*    to="/"*/}
+                                {/*    value="/"*/}
+                                {/*/>*/}
+                                {/*<Tab*/}
+                                {/*    label={'Contacts'}*/}
+                                {/*    component={Link}*/}
+                                {/*    to="/contacts"*/}
+                                {/*    value="/contacts"*/}
+                                {/*/>*/}
+                                {/*<Tab*/}
+                                {/*    label={'Companies'}*/}
+                                {/*    component={Link}*/}
+                                {/*    to="/companies"*/}
+                                {/*    value="/companies"*/}
+                                {/*/>*/}
+                                {/*<Tab*/}
+                                {/*    label={'Deals'}*/}
+                                {/*    component={Link}*/}
+                                {/*    to="/deals"*/}
+                                {/*    value="/deals"*/}
+                                {/*/>*/}
                                 <Tab
                                     label={'Components'}
                                     component={Link}
